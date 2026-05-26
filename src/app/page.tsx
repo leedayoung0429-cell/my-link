@@ -5,19 +5,16 @@ export default function Home() {
     {
       title: "Portfolio V1",
       desc: "My first personal portfolio built with React and styled-components.",
-      year: "2024",
       link: "#"
     },
     {
       title: "Project Zero",
       desc: "An experimental web app focusing on performance and web accessibility.",
-      year: "2025",
       link: "#"
     },
     {
       title: "Design System",
       desc: "A comprehensive UI component library created for internal company tools.",
-      year: "2026",
       link: "#"
     }
   ];
@@ -56,7 +53,6 @@ export default function Home() {
           <div className={styles.projectsGrid}>
             {projects.map((project, idx) => (
               <div key={idx} className={styles.projectCard}>
-                <span className={styles.projectYear}>{project.year}</span>
                 <h3 className={styles.projectTitle}>{project.title}</h3>
                 <p className={styles.projectDesc}>{project.desc}</p>
                 <a href={project.link} className={styles.projectLink}>View Project</a>
