@@ -65,10 +65,12 @@
 }
 
 .heroTitle {
-  font-size: clamp(2.8rem, 6vw, 4.5rem);
-  font-weight: 800;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-style: italic; /* 우아한 세리프 이탤릭으로 에디토리얼 감성의 확실한 포인트 부여 */
+  font-size: clamp(3.2rem, 7vw, 5.2rem);
+  font-weight: 500;
   line-height: 1.1;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.01em;
   margin: 0 0 1.5rem 0;
   color: var(--text-primary);
 }
