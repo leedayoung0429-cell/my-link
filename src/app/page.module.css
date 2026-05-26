@@ -320,3 +320,25 @@
     padding: 2.5rem 0 4rem 0;
   }
 }
+
+/* --- Project Card Image Styles --- */
+.projectImageWrapper {
+  width: 100%;
+  height: 170px;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  background: rgba(0, 0, 0, 0.02);
+}
+
+.projectImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* 이미지가 이쁘게 채워지도록 설정 */
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.projectCard:hover .projectImage {
+  transform: scale(1.04); /* 카드 호버 시 이미지 미세 줌 효과 */
+}

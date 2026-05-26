@@ -4,7 +4,8 @@ export default function Home() {
   const projects = [
     {
       title: "Project 1",
-      link: "https://blog.naver.com/leedayoung0429/223678225070"
+      link: "https://blog.naver.com/leedayoung0429/223678225070",
+      img: "/project1.jpg"
     },
     {
       title: "Project 2",
@@ -55,6 +56,11 @@ export default function Home() {
           <div className={styles.projectsGrid}>
             {projects.map((project, idx) => (
               <div key={idx} className={styles.projectCard}>
+                {project.img && (
+                  <div className={styles.projectImageWrapper}>
+                    <img src={project.img} alt={project.title} className={styles.projectImage} />
+                  </div>
+                )}
                 <h3 className={styles.projectTitle}>{project.title}</h3>
                 <a href={project.link} className={styles.projectLink} target="_blank" rel="noopener noreferrer">View Project</a>
               </div>
