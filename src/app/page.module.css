@@ -132,12 +132,22 @@
 }
 
 .heroSubtitle {
-  font-size: clamp(1.1rem, 2vw, 1.35rem);
+  font-size: clamp(1.05rem, 1.8vw, 1.25rem);
   font-weight: 400;
-  color: var(--text-secondary);
-  max-width: 580px;
-  line-height: 1.6;
+  color: var(--text-primary);
+  max-width: 680px;
+  line-height: 1.7;
   margin: 0;
+  
+  /* 투명한 하늘색 네모 상자 효과 */
+  background: rgba(186, 235, 255, 0.22); /* 투명한 파스텔 하늘색 배경 */
+  backdrop-filter: blur(16px) saturate(110%);
+  -webkit-backdrop-filter: blur(16px) saturate(110%);
+  border: 1px solid rgba(186, 235, 255, 0.45); /* 부드러운 반투명 하늘색 테두리 */
+  border-radius: 20px; /* 라운드 엣지 */
+  padding: 2.25rem 2.5rem; /* 내부 여백 */
+  box-shadow: 0 10px 40px -10px rgba(0, 122, 255, 0.05); /* 은은한 하늘색 반사 그림자 */
+  margin-top: 1rem;
 }
 
 /* --- Section Titles --- */
