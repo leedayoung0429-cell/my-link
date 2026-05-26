@@ -39,7 +39,7 @@ export default function Home() {
       <main className={styles.mainContent}>
         {/* Hero Section */}
         <section className={styles.hero} id="about">
-          <div className={styles.heroGreeting}>* HELLO WORLD</div>
+          <div className={styles.heroGreeting}>* COZY STITCHES</div>
           <h1 className={styles.heroTitle}>I'M LEE DA-YOUNG</h1>
           <p className={styles.heroSubtitle}>
             Welcome to my personal space on the internet.
