@@ -13,9 +13,9 @@ export default function Home() {
       link: "https://leedayoung29.tistory.com/3"
     },
     {
-      title: "Design System",
+      title: "Project 3",
       desc: "A comprehensive UI component library created for internal company tools.",
-      link: "#"
+      link: "https://leedayoung29.tistory.com/2"
     }
   ];
 
