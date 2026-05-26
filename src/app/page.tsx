@@ -8,9 +8,9 @@ export default function Home() {
       link: "https://leedayoung29.tistory.com/1"
     },
     {
-      title: "Project Zero",
+      title: "Project 2",
       desc: "An experimental web app focusing on performance and web accessibility.",
-      link: "#"
+      link: "https://leedayoung29.tistory.com/3"
     },
     {
       title: "Design System",
