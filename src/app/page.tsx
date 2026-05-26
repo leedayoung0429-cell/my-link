@@ -3,9 +3,9 @@ import styles from "./page.module.css";
 export default function Home() {
   const projects = [
     {
-      title: "Portfolio V1",
+      title: "Project 1",
       desc: "My first personal portfolio built with React and styled-components.",
-      link: "#"
+      link: "https://leedayoung29.tistory.com/1"
     },
     {
       title: "Project Zero",
@@ -55,7 +55,7 @@ export default function Home() {
               <div key={idx} className={styles.projectCard}>
                 <h3 className={styles.projectTitle}>{project.title}</h3>
                 <p className={styles.projectDesc}>{project.desc}</p>
-                <a href={project.link} className={styles.projectLink}>View Project</a>
+                <a href={project.link} className={styles.projectLink} target="_blank" rel="noopener noreferrer">View Project</a>
               </div>
             ))}
           </div>
