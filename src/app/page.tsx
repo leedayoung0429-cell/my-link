@@ -52,7 +52,7 @@ export default function Home() {
 
         {/* Projects Section */}
         <section className={styles.projectsSection} id="projects">
-          <h2 className={styles.sectionTitle}>Selected Works // 🧵🪡</h2>
+          <h2 className={styles.sectionTitle}>Selected Works 🧵🪡</h2>
           <div className={styles.projectsGrid}>
             {projects.map((project, idx) => (
               <div key={idx} className={styles.projectCard}>
