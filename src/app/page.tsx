@@ -1,11 +1,6 @@
 import styles from "./page.module.css";
 
 export default function Home() {
-  const skills = [
-    "JavaScript", "TypeScript", "React", "Next.js", 
-    "CSS/HTML", "Figma", "TailwindCSS", "Node.js"
-  ];
-
   const projects = [
     {
       title: "Portfolio V1",
@@ -49,18 +44,6 @@ export default function Home() {
             A passionate developer & designer crafting bold, unapologetic, and beautiful web experiences. 
             Welcome to my personal space on the internet.
           </p>
-        </section>
-
-        {/* Skills Section */}
-        <section className={styles.skillsSection}>
-          <h2 className={styles.sectionTitle}>Tech Stack //</h2>
-          <div className={styles.skillsGrid}>
-            {skills.map((skill, idx) => (
-              <div key={idx} className={styles.skillCard}>
-                {skill}
-              </div>
-            ))}
-          </div>
         </section>
 
         {/* Projects Section */}
