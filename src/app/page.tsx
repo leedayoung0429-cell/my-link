@@ -5,7 +5,7 @@ export default function Home() {
     {
       title: "Project 1",
       desc: "My first personal portfolio built with React and styled-components.",
-      link: "https://leedayoung29.tistory.com/1"
+      link: "https://blog.naver.com/leedayoung0429/223678225070"
     },
     {
       title: "Project 2",
