@@ -10,7 +10,7 @@ export default function Home() {
     {
       title: "Project 2",
       desc: "An experimental web app focusing on performance and web accessibility.",
-      link: "https://leedayoung29.tistory.com/3"
+      link: "https://blog.naver.com/leedayoung0429/223753774534"
     },
     {
       title: "Project 3",
