@@ -42,7 +42,9 @@ export default function Home() {
           <div className={styles.heroGreeting}>* HELLO WORLD</div>
           <h1 className={styles.heroTitle}>I'M LEE DA-YOUNG</h1>
           <p className={styles.heroSubtitle}>
-            Welcome to my personal space on the internet. <br /><br />
+            Welcome to my personal space on the internet.
+            <br />
+            <br />
             Just as stitches weave together to create a garment, this is a small archive where I carefully knit the fragments of my daily life and thoughts. Stepping away from a fast-paced world, I share the mindful records filled with the warmth of my fingertips. Within the cozy spaces created between yarn and needles, I hope your heart can find a warm place to rest.
           </p>
         </section>
