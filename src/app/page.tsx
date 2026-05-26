@@ -15,7 +15,7 @@ export default function Home() {
     {
       title: "Project 3",
       desc: "A comprehensive UI component library created for internal company tools.",
-      link: "https://leedayoung29.tistory.com/2"
+      link: "https://blog.naver.com/leedayoung0429/223753774534"
     }
   ];
 
