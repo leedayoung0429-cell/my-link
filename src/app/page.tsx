@@ -4,22 +4,18 @@ export default function Home() {
   const projects = [
     {
       title: "Project 1",
-      desc: "My first personal portfolio built with React and styled-components.",
       link: "https://blog.naver.com/leedayoung0429/223678225070"
     },
     {
       title: "Project 2",
-      desc: "An experimental web app focusing on performance and web accessibility.",
       link: "https://blog.naver.com/leedayoung0429/223753774534"
     },
     {
       title: "Project 3",
-      desc: "A comprehensive UI component library created for internal company tools.",
       link: "https://blog.naver.com/leedayoung0429/223753774534"
     },
     {
       title: "Project 4",
-      desc: "A creative web space showcasing digital crafts and conceptual designs.",
       link: "https://blog.naver.com/leedayoung0429/224230464654"
     }
   ];
@@ -61,7 +57,6 @@ export default function Home() {
             {projects.map((project, idx) => (
               <div key={idx} className={styles.projectCard}>
                 <h3 className={styles.projectTitle}>{project.title}</h3>
-                <p className={styles.projectDesc}>{project.desc}</p>
                 <a href={project.link} className={styles.projectLink} target="_blank" rel="noopener noreferrer">View Project</a>
               </div>
             ))}
