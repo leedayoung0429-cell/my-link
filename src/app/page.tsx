@@ -43,7 +43,7 @@ export default function Home() {
           <h1 className={styles.heroTitle}>I'M LEE DA-YOUNG</h1>
           <p className={styles.heroSubtitle}>
             Welcome to my personal space on the internet. <br /><br />
-            Just as lines and planes meet to create architecture, this is a small archive where I gently stack the urban pauses and fragments of space I encounter. Rather than offering grand answers, I share my contemplations on how the spaces around us breathe again and connect with people.
+            Just as stitches weave together to create a garment, this is a small archive where I carefully knit the fragments of my daily life and thoughts. Stepping away from a fast-paced world, I share the mindful records filled with the warmth of my fingertips. Within the cozy spaces created between yarn and needles, I hope your heart can find a warm place to rest.
           </p>
         </section>
 
