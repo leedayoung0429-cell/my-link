@@ -6,19 +6,74 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  position: relative; /* 배경 블롭의 절대 위치 기준점 역할 */
 }
 
-/* --- Header --- */
+/* --- Background Blobs with Smooth Floating Animation --- */
+.bgBlob1 {
+  position: absolute;
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 218, 209, 0.45) 0%, rgba(255, 255, 255, 0) 70%);
+  top: -50px;
+  left: -200px;
+  filter: blur(70px);
+  z-index: -1;
+  pointer-events: none;
+  animation: floatBlob1 20s infinite alternate ease-in-out;
+}
+
+.bgBlob2 {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(208, 224, 255, 0.55) 0%, rgba(255, 255, 255, 0) 70%);
+  bottom: 5%;
+  right: -250px;
+  filter: blur(90px);
+  z-index: -1;
+  pointer-events: none;
+  animation: floatBlob2 25s infinite alternate ease-in-out;
+}
+
+@keyframes floatBlob1 {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+  100% {
+    transform: translate(40px, 60px) scale(1.1);
+  }
+}
+
+@keyframes floatBlob2 {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+  100% {
+    transform: translate(-50px, -70px) scale(0.95);
+  }
+}
+
+/* --- Sticky Glassmorphic Header --- */
 .header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2.5rem 0;
-  margin-bottom: 5rem;
+  padding: 1.5rem 2rem;
+  margin: 0 -2rem 5rem -2rem; /* 컨테이너 패딩에 딱 맞게 확장 */
+  background: var(--header-bg);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--border-color);
 }
 
 .logo {
-  font-size: 1.15rem;
+  font-size: 1.1rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -35,7 +90,6 @@
   font-size: 0.95rem;
   color: var(--text-secondary);
   transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-  position: relative;
 }
 
 .navLink:hover {
@@ -56,17 +110,19 @@
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--text-secondary);
-  background: rgba(0, 0, 0, 0.03);
+  background: var(--card-bg);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   padding: 0.35rem 0.75rem;
   border-radius: 9999px;
   margin-bottom: 1.5rem;
   display: inline-block;
-  border: 1px solid var(--border-color);
+  border: 1px solid var(--card-border);
 }
 
 .heroTitle {
   font-family: 'Cormorant Garamond', Georgia, serif;
-  font-style: italic; /* 우아한 세리프 이탤릭으로 에디토리얼 감성의 확실한 포인트 부여 */
+  font-style: italic; /* 우아한 세리프 이탤릭 유지 */
   font-size: clamp(3.2rem, 7vw, 5.2rem);
   font-weight: 500;
   line-height: 1.1;
@@ -86,7 +142,7 @@
 
 /* --- Section Titles --- */
 .sectionTitle {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   font-weight: 700;
   letter-spacing: -0.02em;
   margin-bottom: 2.5rem;
@@ -114,30 +170,36 @@
   gap: 2rem;
 }
 
+/* --- Glassmorphic Project Cards --- */
 .projectCard {
   background: var(--card-bg);
-  border: 1px solid var(--border-color);
+  backdrop-filter: blur(12px) saturate(120%);
+  -webkit-backdrop-filter: blur(12px) saturate(120%);
+  border: 1px solid var(--card-border);
   border-radius: 16px;
   padding: 2.25rem;
   display: flex;
   flex-direction: column;
   transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), 
               box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1),
-              border-color 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.015);
+              border-color 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+              background-color 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.02);
 }
 
 .projectCard:hover {
   transform: translateY(-6px);
-  border-color: rgba(0, 0, 0, 0.12);
-  box-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.05);
+  border-color: rgba(255, 255, 255, 0.95);
+  background-color: rgba(255, 255, 255, 0.65); /* 호버 시 유리가 좀 더 선명해짐 */
+  box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.05);
 }
 
 .projectYear {
   font-size: 0.75rem;
   font-weight: 600;
   color: var(--text-secondary);
-  background: rgba(0, 0, 0, 0.03);
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.6);
   padding: 0.25rem 0.5rem;
   border-radius: 4px;
   align-self: flex-start;
@@ -202,9 +264,12 @@
   gap: 0.75rem;
 }
 
+/* --- Glassmorphic Social Buttons --- */
 .socialBtn {
   background: var(--card-bg);
-  border: 1px solid var(--border-color);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid var(--card-border);
   width: 42px;
   height: 42px;
   border-radius: 50%;
@@ -213,20 +278,21 @@
   justify-content: center;
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
   color: var(--text-secondary);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.01);
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.01);
 }
 
 .socialBtn:hover {
   color: var(--text-primary);
-  border-color: rgba(0, 0, 0, 0.15);
+  border-color: rgba(255, 255, 255, 0.95);
+  background-color: rgba(255, 255, 255, 0.65);
   transform: translateY(-2px);
-  box-shadow: 0 8px 16px -4px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 8px 16px -4px rgba(0, 0, 0, 0.05);
 }
 
 /* --- Responsive Adjustments --- */
 @media (max-width: 768px) {
   .header {
-    padding: 2rem 0;
+    padding: 1.25rem 1.5rem;
     margin-bottom: 3.5rem;
   }
   

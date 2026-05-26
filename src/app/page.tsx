@@ -24,6 +24,10 @@ export default function Home() {
 
   return (
     <div className={styles.container}>
+      {/* Background Blobs for Glassmorphism */}
+      <div className={styles.bgBlob1}></div>
+      <div className={styles.bgBlob2}></div>
+
       {/* Header */}
       <header className={styles.header}>
         <div className={styles.logo}>Da-young</div>
@@ -35,7 +39,7 @@ export default function Home() {
       </header>
 
       {/* Main Content */}
-      <main>
+      <main className={styles.mainContent}>
         {/* Hero Section */}
         <section className={styles.hero} id="about">
           <div className={styles.heroGreeting}>* HELLO WORLD</div>
