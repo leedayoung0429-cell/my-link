@@ -41,8 +41,7 @@ export default function Home() {
           <div className={styles.heroGreeting}>* HELLO WORLD</div>
           <h1 className={styles.heroTitle}>I'M LEE DA-YOUNG</h1>
           <p className={styles.heroSubtitle}>
-            A passionate developer & designer crafting bold, unapologetic, and beautiful web experiences. 
-            Welcome to my personal space on the internet.
+            Welcome to my personal space on the internet. What you’ll find here is a collection of my thoughts, projects, and the things that inspire me.
           </p>
         </section>
 
