@@ -16,6 +16,11 @@ export default function Home() {
       title: "Project 3",
       desc: "A comprehensive UI component library created for internal company tools.",
       link: "https://blog.naver.com/leedayoung0429/223753774534"
+    },
+    {
+      title: "Project 4",
+      desc: "A creative web space showcasing digital crafts and conceptual designs.",
+      link: "https://blog.naver.com/leedayoung0429/224230464654"
     }
   ];
 
