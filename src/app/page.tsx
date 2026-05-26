@@ -28,7 +28,6 @@ export default function Home() {
 
       {/* Header */}
       <header className={styles.header}>
-        <div className={styles.logo}>Da-young</div>
         <nav className={styles.navLinks}>
           <a href="#about" className={styles.navLink}>About</a>
           <a href="#projects" className={styles.navLink}>Projects</a>
