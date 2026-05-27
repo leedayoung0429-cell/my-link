@@ -89,7 +89,7 @@ export default function Home() {
             </svg>
           </a>
           <a href="https://blog.naver.com/leedayoung0429" className={styles.socialBtn} aria-label="Naver Blog" target="_blank" rel="noopener noreferrer">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" style={{ transform: "scaleX(-1)" }}>
               <path d="M16.273 19.186h-4.832v-7.147l-4.54 7.147H2.069V4.814h4.832v7.147l4.54-7.147h4.832v14.372z"/>
             </svg>
           </a>
