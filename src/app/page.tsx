@@ -9,15 +9,18 @@ export default function Home() {
     },
     {
       title: "Project 2",
-      link: "https://blog.naver.com/leedayoung0429/223753774534"
+      link: "https://blog.naver.com/leedayoung0429/223753774534",
+      img: "/project2.jpg"
     },
     {
       title: "Project 3",
-      link: "https://blog.naver.com/leedayoung0429/223753774534"
+      link: "https://blog.naver.com/leedayoung0429/223753774534",
+      img: "/project2.jpg"
     },
     {
       title: "Project 4",
-      link: "https://blog.naver.com/leedayoung0429/224230464654"
+      link: "https://blog.naver.com/leedayoung0429/224230464654",
+      img: "/project4.jpg"
     }
   ];
 
