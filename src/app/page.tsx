@@ -14,8 +14,8 @@ export default function Home() {
     },
     {
       title: "Project 3",
-      link: "https://blog.naver.com/leedayoung0429/223753774534",
-      img: "/project2.jpg"
+      link: "https://blog.naver.com/leedayoung0429/223784310026",
+      img: "/project3.jpg"
     },
     {
       title: "Project 4",
